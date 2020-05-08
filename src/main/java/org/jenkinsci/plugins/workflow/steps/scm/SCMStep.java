@@ -162,6 +162,7 @@ public abstract class SCMStep extends Step {
     public static abstract class SCMStepDescriptor extends StepDescriptor {
 
         @Override public Set<? extends Class<?>> getRequiredContext() {
+            // TODO
             return ImmutableSet.of(Run.class, FilePath.class, TaskListener.class, Launcher.class);
         }
 
